@@ -6,18 +6,22 @@
         xmlns:local="clr-namespace:WpfApp.Users"
         mc:Ignorable="d"
         Title="登录页面" Height="300" Width="500" ShowInTaskbar="true" WindowStartupLocation="CenterScreen" WindowState="Normal" 
-        Topmost="True" Icon="../imgs/icon.png">
+        Topmost="True" Icon="../imgs/icon.png" Loaded="Window_Loaded">
     <!--网格 行和列 布局控件 Grid window--> 
-    <Grid>
-        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" HorizontalContentAlignment="Center">账号：</Label>
-        <TextBox Name="username" Margin="0,5,0,0" Height="23" TextWrapping="NoWrap" Text="admin" VerticalAlignment="Top" Width="120"></TextBox>
-        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" Margin="0,30" HorizontalContentAlignment="Center">密码：</Label>
-        <PasswordBox Name="password" Margin="0,35,0,0" Height="23" Password="123456" PasswordChar="*" VerticalAlignment="Top" Width="120"></PasswordBox>
-        <Button Name="btnLogin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="50,80,0,0" Click="btnLogin_Click"
-                Background="YellowGreen" BorderBrush="Cyan" BorderThickness="1" FontStretch="ExtraExpanded" FontWeight="Bold">
+    <Grid Name="container">
+        <Label HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Width="108" HorizontalContentAlignment="Center">账号：</Label>
+        <TextBox Name="username" Margin="0,20,0,0" Height="23" TextWrapping="NoWrap" Text="admin" VerticalAlignment="Top" Width="120"></TextBox>
+        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" Margin="0,45" HorizontalContentAlignment="Center">密码：</Label>
+        <PasswordBox Name="password" Margin="0,50,0,0" Height="23" Password="123456" PasswordChar="*" VerticalAlignment="Top" Width="120"></PasswordBox>
+        <RadioButton Content="管理员" GroupName="role" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,85,0,0" Checked="RadioButton_Checked"></RadioButton>
+        <RadioButton Content="学生"  GroupName="role" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,85,0,0" IsChecked="True" Checked="RadioButton_Checked"></RadioButton>
+        <RadioButton Content="教师" GroupName="role" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,85,0,0" Checked="RadioButton_Checked"></RadioButton>
+        <Button Name="btnLogin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="70,120,0,0" Click="btnLogin_Click"
+                Background="YellowGreen" BorderBrush="Cyan" BorderThickness="1" FontStretch="ExtraExpanded" FontWeight="Bold"
+                IsDefault="True">
             <Label Content="登录" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White"></Label>
         </Button>
-        <Button Name="btnCancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="150,80,0,0" Click="btnCancel_Click">
+        <Button Name="btnCancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="170,120,0,0" Click="btnCancel_Click">
             <Label Content="取消" HorizontalAlignment="Left" VerticalAlignment="Top"></Label>
             <Button.Background>
                 <ImageBrush ImageSource="../imgs/gradient2-alt.jpg"></ImageBrush>

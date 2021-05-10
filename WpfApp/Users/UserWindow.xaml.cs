@@ -35,5 +35,22 @@ namespace WpfApp.Users
             string upwd = password.Password.Trim();
             MessageBox.Show($"登录成功,{uname} {upwd}", "登录提示", MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show((sender as RadioButton).Content.ToString(), "系统提示", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            RadioButton rbtn = new RadioButton();
+            rbtn.Content = "主任";
+            rbtn.GroupName = "role";
+            rbtn.Margin = new Thickness(260,85,0,0);
+            rbtn.HorizontalAlignment = HorizontalAlignment.Left;
+            rbtn.VerticalAlignment = VerticalAlignment.Top;
+            rbtn.Checked += RadioButton_Checked;
+            container.Children.Add(rbtn);
+        }
     }
 }

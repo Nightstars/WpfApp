@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp.controls.CheckBoxControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp.controls"
+        mc:Ignorable="d"
+        Title="CheckBox" Height="450" Width="800">
+    <Grid Name="container">
+        <CheckBox Name="chkSport" Content="体育" HorizontalAlignment="Left" VerticalAlignment="Top" IsChecked="True" IsThreeState="True" Margin="20"></CheckBox>
+        <CheckBox Name="sing" Content="唱歌" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="True" Margin="80,20,20,20"></CheckBox>
+        <CheckBox Name="dance" Content="跳舞" HorizontalAlignment="Left" VerticalAlignment="Top" IsThreeState="True" Margin="140,20,20,20"></CheckBox>
+        <Button Name="getBtn" Content="获取" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50" Width="80" Click="getBtn_Click"></Button>
+        <Button Name="getBtn1" Content="添加" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,50,0,0" Width="80" Click="getBtn1_Click"></Button>
+        <Button Name="get2" Content="获取2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,50,0,0" Width="80" Click="getBtn_Click_1"></Button>
+        <Grid Name="box">
+            
+        </Grid>
+    </Grid>
+</Window>
