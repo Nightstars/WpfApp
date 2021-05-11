@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp.controls.ImageControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp.controls"
+        mc:Ignorable="d"
+        Title="ImageControl" Height="450" Width="800">
+    <Grid>
+        <Image Name="img" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Width="300" Margin="30"
+               Source="../imgs/landscape-with-beach-and-ocean.jpg" Stretch="Fill"></Image>
+        <Image Name="pic" HorizontalAlignment="Left" VerticalAlignment="Top" Height="200" Width="300" Margin="420,30,0,0"
+                Stretch="Fill"></Image>
+        <Image Name="icon" HorizontalAlignment="Left" VerticalAlignment="Top" Height="150" Width="200" Margin="30,250,0,0"
+                Stretch="Fill"></Image>
+        <Button Name="changeImg" HorizontalAlignment="Left" VerticalAlignment="Top" Content="change" Margin="350,100,0,0" 
+                Click="changeImg_Click"></Button>
+        <Button Name="showImg" HorizontalAlignment="Left" VerticalAlignment="Top" Content="showImg" Margin="350,150,0,0" 
+                Click="showImg_Click"></Button>
+        <Button Name="showPic" HorizontalAlignment="Left" VerticalAlignment="Top" Content="showPic" Margin="350,200,0,0" 
+                Click="showPic_Click"></Button>
+    </Grid>
+</Window>

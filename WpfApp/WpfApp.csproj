@@ -55,13 +55,36 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="controls\BorderControl.xaml.cs">
+      <DependentUpon>BorderControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="controls\CheckBoxControl.xaml.cs">
       <DependentUpon>CheckBoxControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="controls\ComboBoxControl.xaml.cs">
+      <DependentUpon>ComboBoxControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="controls\ImageControl.xaml.cs">
+      <DependentUpon>ImageControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="model\ClassInfo.cs" />
+    <Compile Include="services\ComboBoxServices.cs" />
     <Compile Include="Users\UserWindow.xaml.cs">
       <DependentUpon>UserWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="controls\BorderControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="controls\CheckBoxControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\ComboBoxControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\ImageControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -113,6 +136,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imgs\gradient2-alt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\landscape-with-beach-and-ocean.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imgs\afae0e0880b05feae6dbcd4a6b210a51.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
