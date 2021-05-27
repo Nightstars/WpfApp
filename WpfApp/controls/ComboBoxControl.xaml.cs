@@ -49,5 +49,10 @@ namespace WpfApp.controls
         {
             course.Items.RemoveAt(1);
         }
+
+        private void course_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MessageBox.Show((course.SelectedItem as ClassInfo).Name);
+        }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp.controls"
         mc:Ignorable="d"
-        Title="ComboBoxControl" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="ComboBoxControl" Height="450" Width="800" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
         <ComboBox Width="120" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="50">
             <ComboBoxItem Content="请选择" IsSelected="True"></ComboBoxItem>
@@ -14,7 +14,8 @@
             <ComboBoxItem Content="C#"></ComboBoxItem>
         </ComboBox>
         <ComboBox Name="course" Width="120" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" 
-                  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="50,120,0,0" ItemsSource="{Binding}">
+                  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="50,120,0,0" 
+                  ItemsSource="{Binding}" SelectionChanged="course_SelectionChanged">
         </ComboBox>
         <Button Name="rmItem" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="30" 
                 Content="动态移除选项" Margin="50,190,0,0" Click="rmItem_Click"></Button>
