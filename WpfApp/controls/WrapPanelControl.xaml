@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp.controls.WrapPanelControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp.controls"
+        mc:Ignorable="d"
+        Title="WrapPanelControl" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Border BorderBrush="LawnGreen" BorderThickness="1" CornerRadius="10" Margin="20">
+        <!--<WrapPanel Name="container" Orientation="Horizontal" ItemWidth="100" ItemHeight="50" HorizontalAlignment="Center">
+            --><!--<Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>
+            <Button Content="Btn1" Margin="10"></Button>--><!--
+        </WrapPanel>-->
+        <StackPanel Height="400">
+            <WrapPanel Name="wpPanel1" Height="180"></WrapPanel>
+            <WrapPanel Name="wpPanel2" Orientation="Vertical" Height="180" Margin="0,17,0,0"></WrapPanel>
+        </StackPanel>
+    </Border>
+</Window>
