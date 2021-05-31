@@ -83,6 +83,9 @@
     <Compile Include="controls\SliderControl.xaml.cs">
       <DependentUpon>SliderControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="controls\StackPanelControl.xaml.cs">
+      <DependentUpon>StackPanelControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="model\ClassInfo.cs" />
     <Compile Include="services\ComboBoxServices.cs" />
     <Compile Include="Users\UserWindow.xaml.cs">
@@ -121,6 +124,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="controls\SliderControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\StackPanelControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
