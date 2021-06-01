@@ -62,6 +62,9 @@
     <Compile Include="controls\CalendatControl.xaml.cs">
       <DependentUpon>CalendatControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="controls\CanvasControl.xaml.cs">
+      <DependentUpon>CanvasControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="controls\CheckBoxControl.xaml.cs">
       <DependentUpon>CheckBoxControl.xaml</DependentUpon>
     </Compile>
@@ -102,6 +105,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="controls\CalendatControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\CanvasControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
