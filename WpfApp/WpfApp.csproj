@@ -71,6 +71,9 @@
     <Compile Include="controls\DatePickerControl.xaml.cs">
       <DependentUpon>DatePickerControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="controls\DockPanelControl.xaml.cs">
+      <DependentUpon>DockPanelControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="controls\ImageControl.xaml.cs">
       <DependentUpon>ImageControl.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="controls\DatePickerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\DockPanelControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
