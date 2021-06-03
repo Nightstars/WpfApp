@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp.controls.ExpanderControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp.controls"
+        mc:Ignorable="d"
+        Title="ExpanderControl" Height="450" Width="800">
+    <Grid>
+        <Expander Header="用户权限" HorizontalAlignment="Left" Height="auto" Width="auto" Margin="50,0" 
+                  ExpandDirection="Down" Padding="10" BorderBrush="GreenYellow" BorderThickness="2" VerticalAlignment="Center"> 
+            <StackPanel Background="Pink" >
+                <CheckBox Content="管理员"></CheckBox>
+                <CheckBox Content="系统管理员"></CheckBox>
+                <CheckBox Content="业务员"></CheckBox>
+            </StackPanel>
+        </Expander>
+    </Grid>
+</Window>

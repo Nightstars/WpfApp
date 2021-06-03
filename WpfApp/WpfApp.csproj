@@ -77,6 +77,9 @@
     <Compile Include="controls\DockPanelControl.xaml.cs">
       <DependentUpon>DockPanelControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="controls\ExpanderControl.xaml.cs">
+      <DependentUpon>ExpanderControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="controls\GridControl.xaml.cs">
       <DependentUpon>GridControl.xaml</DependentUpon>
     </Compile>
@@ -131,6 +134,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="controls\DockPanelControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\ExpanderControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
