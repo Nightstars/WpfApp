@@ -80,6 +80,9 @@
     <Compile Include="controls\GridControl.xaml.cs">
       <DependentUpon>GridControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="controls\GroupBoxControl.xaml.cs">
+      <DependentUpon>GroupBoxControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="controls\ImageControl.xaml.cs">
       <DependentUpon>ImageControl.xaml</DependentUpon>
     </Compile>
@@ -132,6 +135,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="controls\GridControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\GroupBoxControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

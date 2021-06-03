@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApp.controls.GroupBoxControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp.controls"
+        mc:Ignorable="d"
+        Title="GroupBoxControl" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded"> 
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <GroupBox Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Header="导航菜单" Width="200" Height="300" BorderThickness="2" BorderBrush="GreenYellow">
+            <StackPanel>
+                <Label Content="这是一个GroupBox控件"></Label>
+                <Label Content="这是一个GroupBox控件"></Label>
+                <Label Content="这是一个GroupBox控件"></Label>
+                <Label Content="这是一个GroupBox控件"></Label>
+                <Label Content="这是一个GroupBox控件"></Label>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox  Name="gbinfo" Grid.Column="1"  HorizontalAlignment="Center" Header="导航菜单2" Width="200" Height="300" BorderThickness="2" BorderBrush="GreenYellow">
+            <StackPanel Orientation="Vertical" Name="spfirst">
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="btn1" Margin="5"></Button>
+                    <Button Content="btn1" Margin="5"></Button>
+                    <Button Content="btn1" Margin="5"></Button>
+                    <Button Content="btn1" Margin="5"></Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Name="spuser">
+                    <Label Content="用户名："></Label>
+                    <TextBox Name="txtusername" Text="userName" Width="120"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0" Name="sppassword">
+                    <Label Content="密    码："></Label>
+                    <PasswordBox Name="txtpassword" PasswordChar="*" Width="120" Password="123456"></PasswordBox>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>
