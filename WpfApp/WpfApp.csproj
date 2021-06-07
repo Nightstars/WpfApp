@@ -80,6 +80,9 @@
     <Compile Include="controls\ExpanderControl.xaml.cs">
       <DependentUpon>ExpanderControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="controls\FrameControl.xaml.cs">
+      <DependentUpon>FrameControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="controls\GridControl.xaml.cs">
       <DependentUpon>GridControl.xaml</DependentUpon>
     </Compile>
@@ -95,6 +98,9 @@
     <Compile Include="controls\PrograssBarControl.xaml.cs">
       <DependentUpon>PrograssBarControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="controls\RoleInfoPage.xaml.cs">
+      <DependentUpon>RoleInfoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="controls\SliderControl.xaml.cs">
       <DependentUpon>SliderControl.xaml</DependentUpon>
     </Compile>
@@ -103,6 +109,9 @@
     </Compile>
     <Compile Include="controls\TabControl.xaml.cs">
       <DependentUpon>TabControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="controls\UserInfoPage.xaml.cs">
+      <DependentUpon>UserInfoPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="controls\WrapPanelControl.xaml.cs">
       <DependentUpon>WrapPanelControl.xaml</DependentUpon>
@@ -144,6 +153,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="controls\FrameControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="controls\GridControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -164,6 +177,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="controls\RoleInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="controls\SliderControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -173,6 +190,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="controls\TabControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="controls\UserInfoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
