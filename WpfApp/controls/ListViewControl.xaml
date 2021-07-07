@@ -5,12 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp.controls"
         mc:Ignorable="d"
-        Title="ListViewControl" Height="450" Width="800">
+        Title="ListViewControl" Height="450" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid>
-        <ListView HorizontalAlignment="Left" VerticalAlignment="Top" Width="600" Height="250" Margin="100,80">
+        <ListView ItemsSource="{Binding}" Name="userList" HorizontalAlignment="Left" VerticalAlignment="Top" Height="250" Margin="100,80">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn></GridViewColumn>
+                    <GridViewColumn>
+                        <GridViewColumn.Header>
+                            <CheckBox Name="chkAll" Content="全选"></CheckBox>
+                        </GridViewColumn.Header>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox Name="chk" Tag="{Binding UserId}"
+                                          IsChecked="{Binding ElementName=chkAll,Path=IsChecked,Mode=OneWay}"></CheckBox>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="编号" DisplayMemberBinding="{Binding UserId}" Width="50">
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <Label Content="{Binding}" Foreground="Red" BorderThickness="1"
+                                       BorderBrush="Blue"></Label>
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="账号" Width="80">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding UserName}" Foreground="YellowGreen"
+                                       HorizontalAlignment="Left" TextAlignment="Center" Width="50"></TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="状态" DisplayMemberBinding="{Binding UserState}" Width="50"></GridViewColumn>
+                    <GridViewColumn Header="年龄" DisplayMemberBinding="{Binding UserAge}" Width="50"></GridViewColumn>
+                    <GridViewColumn Header="部门编号" DisplayMemberBinding="{Binding DeptId}" Width="80"></GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
